@@ -4,6 +4,13 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
   <configuration>
+  <settings>
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+		<!-- insert시 자동으로 생성된 키를 반환해주는 세팅 -->
+		<setting name="useGeneratedKeys" value="true" />
+
+	</settings>
+  
   	<typeAliases>
   		<typeAlias type="" alias=""/> <!-- 그 뭐야 빈 등록 -->
   	</typeAliases>
