@@ -8,7 +8,8 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 	
 	<context:component-scan base-package="com.controller"/>
-	<context:property-placeholder location="config/db.properties"/>
+	
+	<context:property-placeholder location="classpath:config/db.properties"/>
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="${db.driver}"/>
@@ -17,15 +18,14 @@
 		<property name="password" value="${db.pwd}"/>
 	</bean>
 	
-	<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean"> 
+	<!-- <bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean"> 
 		<property name="configLocation" value="classpath:config/mybatis.xml"/>
 		<property name="dataSource" ref="dataSource"/>
 		<property name="mapperLocations">
 			<list>
-				<value></value><!-- 매퍼 위치 설정 classpath: -->			
 			</list>
 		</property>
-	</bean>
+	</bean> -->
 	
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/views/"/>
