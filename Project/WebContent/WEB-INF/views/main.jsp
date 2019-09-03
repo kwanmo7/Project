@@ -35,7 +35,7 @@
 			</ul>
 		</li>
 		<li class="menu">
-			<a>aergaerg</a>
+			<a>aergaer</a>
 			<ul class="hide">
 				<li>1</li>
 				<li>1</li>
