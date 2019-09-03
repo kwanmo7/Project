@@ -13,6 +13,6 @@
 	비밀번호 : <input type="password" name="pwd"><br>
 	<input type="button" value="로그인(기능 구현 안함)">
 </form>
-<a href="main">로그인>>></a>
+<a href="main">로그인>>>></a>
 </body>
 </html>
