@@ -12,7 +12,7 @@ public interface GradeMapper {
 		public void updateGrade(GradeVO account);
 		//삭제
 		public void deleteGrade(int id);
-		//아이디로 선택
+		//아이디로 성적보기
 		public GradeVO selectOne(int id);
 		//(가장최근것)가져오기
 		public GradeVO selectLastOne();
